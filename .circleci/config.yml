@@ -1,0 +1,12 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/python
+    steps:
+      - run: exit 0
+workflows:
+  version: 2
+  btd:
+    jobs:
+    - build
